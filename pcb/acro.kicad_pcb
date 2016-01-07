@@ -1899,7 +1899,7 @@
   (gr_text 2mm (at 159.62 117.99) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text ckd.tech/acro/v1 (at 145.09 117.58 360) (layer F.SilkS) (tstamp 56783E5F)
+  (gr_text ckd.tech/acro/v1 (at 145.09 117.58) (layer F.SilkS) (tstamp 56783E5F)
     (effects (font (size 1.25 1.25) (thickness 0.25)))
   )
   (gr_text ckd.tech/acro/v1 (at 144.64 91.46 180) (layer B.SilkS) (tstamp 56783E5D)

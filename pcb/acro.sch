@@ -28,10 +28,9 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:ckd_sandwich
+LIBS:polystack
 LIBS:ti-gate
 LIBS:invensense
-LIBS:acro-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -53,14 +52,14 @@ S 9300 2050 1200 3400
 U 564009DE
 F0 "ExpansionPort" 60
 F1 "ExpansionPort.sch" 60
-F2 "+5V" I L 9300 3800 60 
-F3 "GND" I R 10500 3800 60 
-F4 "GPIO1" I L 9300 2600 60 
-F5 "GPIO2" I L 9300 2700 60 
-F6 "SPI1_NSS" I R 10500 5100 60 
-F7 "SPI1_SCK" I R 10500 5200 60 
-F8 "SPI1_MISO" I R 10500 5300 60 
-F9 "SPI1_MOSI" I R 10500 5400 60 
+F2 "+5V" I L 9300 3800 60
+F3 "GND" I R 10500 3800 60
+F4 "GPIO1" I L 9300 2600 60
+F5 "GPIO2" I L 9300 2700 60
+F6 "SPI1_NSS" I R 10500 5100 60
+F7 "SPI1_SCK" I R 10500 5200 60
+F8 "SPI1_MISO" I R 10500 5300 60
+F9 "SPI1_MOSI" I R 10500 5400 60
 $EndSheet
 $Comp
 L MPU-6500 U1
@@ -71,7 +70,7 @@ F 1 "MPU-6500" H 2400 2050 60  0000 C CNN
 F 2 "invensense:QFN-24-1EP_3x3mm_Pitch0.4mm" H 2250 2000 60  0001 C CNN
 F 3 "" H 2250 2000 60  0000 C CNN
 	1    2400 2000
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L CONN_01X02 P1
@@ -82,7 +81,7 @@ F 1 "CONN_01X02" V 2400 6400 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Angled_1x02" H 2300 6400 60  0001 C CNN
 F 3 "" H 2300 6400 60  0000 C CNN
 	1    2300 6400
-	-1   0    0    1   
+	-1   0    0    1
 $EndComp
 $Comp
 L LED D1
@@ -93,7 +92,7 @@ F 1 "LED" H 6050 5100 50  0000 C CNN
 F 2 "LEDs:LED-0603" H 6050 5200 60  0001 C CNN
 F 3 "" H 6050 5200 60  0000 C CNN
 	1    6050 5200
-	0    -1   -1   0   
+	0    -1   -1   0
 $EndComp
 $Comp
 L R_Small R2
@@ -104,7 +103,7 @@ F 1 "1k" H 6080 5610 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" H 6050 5650 60  0001 C CNN
 F 3 "" H 6050 5650 60  0000 C CNN
 	1    6050 5650
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L C_Small C1
@@ -115,7 +114,7 @@ F 1 "10nF" H 2050 2900 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2250 3000 60  0001 C CNN
 F 3 "" H 2250 3000 60  0000 C CNN
 	1    2250 3000
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L C_Small C2
@@ -126,7 +125,7 @@ F 1 "0.1uF" H 2460 2920 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2450 3000 60  0001 C CNN
 F 3 "" H 2450 3000 60  0000 C CNN
 	1    2450 3000
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L C_Small C3
@@ -137,7 +136,7 @@ F 1 "0.1uF" H 3210 2270 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3200 2350 60  0001 C CNN
 F 3 "" H 3200 2350 60  0000 C CNN
 	1    3200 2350
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L +3.3V #PWR01
@@ -148,7 +147,7 @@ F 1 "+3.3V" H 1800 3040 50  0000 C CNN
 F 2 "" H 1800 2900 60  0000 C CNN
 F 3 "" H 1800 2900 60  0000 C CNN
 	1    1800 2900
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L +3.3V #PWR02
@@ -159,7 +158,7 @@ F 1 "+3.3V" H 3550 2390 50  0000 C CNN
 F 2 "" H 3550 2250 60  0000 C CNN
 F 3 "" H 3550 2250 60  0000 C CNN
 	1    3550 2250
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L GNDPWR #PWR03
@@ -170,7 +169,7 @@ F 1 "GNDPWR" H 3200 2520 50  0000 C CNN
 F 2 "" H 3200 2600 60  0000 C CNN
 F 3 "" H 3200 2600 60  0000 C CNN
 	1    3200 2650
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L GNDPWR #PWR04
@@ -181,7 +180,7 @@ F 1 "GNDPWR" H 2450 3120 50  0000 C CNN
 F 2 "" H 2450 3200 60  0000 C CNN
 F 3 "" H 2450 3200 60  0000 C CNN
 	1    2450 3250
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L GNDPWR #PWR05
@@ -192,7 +191,7 @@ F 1 "GNDPWR" H 2250 3120 50  0000 C CNN
 F 2 "" H 2250 3200 60  0000 C CNN
 F 3 "" H 2250 3200 60  0000 C CNN
 	1    2250 3250
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L +3.3V #PWR06
@@ -203,7 +202,7 @@ F 1 "+3.3V" H 6050 4940 50  0000 C CNN
 F 2 "" H 6050 4800 60  0000 C CNN
 F 3 "" H 6050 4800 60  0000 C CNN
 	1    6050 4800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L GNDPWR #PWR07
@@ -214,7 +213,7 @@ F 1 "GNDPWR" H 6050 5820 50  0000 C CNN
 F 2 "" H 6050 5900 60  0000 C CNN
 F 3 "" H 6050 5900 60  0000 C CNN
 	1    6050 5950
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 NoConn ~ 2450 1300
 NoConn ~ 2150 2700
@@ -239,7 +238,7 @@ F 1 "GNDPWR" H 10850 3670 50  0000 C CNN
 F 2 "" H 10850 3750 60  0000 C CNN
 F 3 "" H 10850 3750 60  0000 C CNN
 	1    10850 3800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L +5V #PWR09
@@ -250,7 +249,7 @@ F 1 "+5V" H 9050 3940 50  0000 C CNN
 F 2 "" H 9050 3800 60  0000 C CNN
 F 3 "" H 9050 3800 60  0000 C CNN
 	1    9050 3800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L GNDPWR #PWR010
@@ -261,7 +260,7 @@ F 1 "GNDPWR" H 2650 6320 50  0000 C CNN
 F 2 "" H 2650 6400 60  0000 C CNN
 F 3 "" H 2650 6400 60  0000 C CNN
 	1    2650 6450
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L R_Small R1
@@ -272,7 +271,7 @@ F 1 "10k" H 1930 6210 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" H 1900 6250 60  0001 C CNN
 F 3 "" H 1900 6250 60  0000 C CNN
 	1    1900 6250
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	3050 2250 3550 2250
@@ -322,7 +321,7 @@ F 1 "Q_NMOS_GSD" H 3200 6100 50  0000 R CNN
 F 2 "Housings_SOT-23_SOT-143_TSOT-6:SOT-23_Handsoldering" H 2750 6250 29  0001 C CNN
 F 3 "" H 2550 6150 60  0000 C CNN
 	1    2550 6150
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L GNDPWR #PWR011
@@ -333,7 +332,7 @@ F 1 "GNDPWR" H 1900 6320 50  0000 C CNN
 F 2 "" H 1900 6400 60  0000 C CNN
 F 3 "" H 1900 6400 60  0000 C CNN
 	1    1900 6450
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L +5V #PWR012
@@ -344,7 +343,7 @@ F 1 "+5V" H 3100 6090 50  0000 C CNN
 F 2 "" H 3100 5950 60  0000 C CNN
 F 3 "" H 3100 5950 60  0000 C CNN
 	1    3100 5950
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	2650 5950 3100 5950
@@ -367,7 +366,7 @@ F 1 "TLV70233DBV" H 6600 1750 40  0000 C CNN
 F 2 "Housings_SOT-23_SOT-143_TSOT-6:SOT-23-5" H 6500 1650 35  0000 C CIN
 F 3 "" H 6500 1550 60  0000 C CNN
 	1    6500 1550
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L C_Small C5
@@ -378,7 +377,7 @@ F 1 "1uF" H 7310 1670 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7300 1750 60  0001 C CNN
 F 3 "" H 7300 1750 60  0000 C CNN
 	1    7300 1750
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L C C4
@@ -389,7 +388,7 @@ F 1 "1uF" H 5525 1550 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5538 1500 30  0001 C CNN
 F 3 "" H 5500 1650 60  0000 C CNN
 	1    5500 1650
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L GNDPWR #PWR013
@@ -400,7 +399,7 @@ F 1 "GNDPWR" H 6500 1970 50  0000 C CNN
 F 2 "" H 6500 2050 60  0000 C CNN
 F 3 "" H 6500 2050 60  0000 C CNN
 	1    6500 2100
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L +5V #PWR014
@@ -411,7 +410,7 @@ F 1 "+5V" H 5500 1340 50  0000 C CNN
 F 2 "" H 5500 1200 60  0000 C CNN
 F 3 "" H 5500 1200 60  0000 C CNN
 	1    5500 1200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L +3.3V #PWR015
@@ -422,7 +421,7 @@ F 1 "+3.3V" H 7600 1640 50  0000 C CNN
 F 2 "" H 7600 1500 60  0000 C CNN
 F 3 "" H 7600 1500 60  0000 C CNN
 	1    7600 1500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	5500 1200 5500 1500
@@ -462,7 +461,7 @@ F 1 "GNDPWR" H 3300 1620 50  0000 C CNN
 F 2 "" H 3300 1700 60  0000 C CNN
 F 3 "" H 3300 1700 60  0000 C CNN
 	1    3300 1750
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Text Label 2350 2700 3    60   ~ 0
 MISO
@@ -476,8 +475,8 @@ F 0 "#PWR017" H 2350 700 50  0001 C CNN
 F 1 "GNDPWR" H 2350 770 50  0000 C CNN
 F 2 "" H 2350 850 60  0000 C CNN
 F 3 "" H 2350 850 60  0000 C CNN
-	1    2350 900 
-	1    0    0    -1  
+	1    2350 900
+	1    0    0    -1
 $EndComp
 $Comp
 L +3.3V #PWR018
@@ -487,17 +486,17 @@ F 0 "#PWR018" H 2900 750 50  0001 C CNN
 F 1 "+3.3V" H 2900 1040 50  0000 C CNN
 F 2 "" H 2900 900 60  0000 C CNN
 F 3 "" H 2900 900 60  0000 C CNN
-	1    2900 900 
-	1    0    0    -1  
+	1    2900 900
+	1    0    0    -1
 $EndComp
 Wire Wire Line
-	2550 1300 2550 900 
+	2550 1300 2550 900
 Wire Wire Line
-	2550 900  2350 900 
+	2550 900  2350 900
 Wire Wire Line
-	2650 1300 2650 900 
+	2650 1300 2650 900
 Wire Wire Line
-	2650 900  2900 900 
+	2650 900  2900 900
 $Comp
 L GNDPWR #PWR019
 U 1 1 567784D0
@@ -507,7 +506,7 @@ F 1 "GNDPWR" H 2800 2720 50  0000 C CNN
 F 2 "" H 2800 2800 60  0000 C CNN
 F 3 "" H 2800 2800 60  0000 C CNN
 	1    2800 2850
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	2550 2700 2550 2850

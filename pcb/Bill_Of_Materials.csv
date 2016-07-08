@@ -1,4 +1,4 @@
-part name,symbol,size (imp),max current,unit price,units per build,units in stock,order total,Manufacturer ID,source url,datasheet,datasheet2,,,
+part name,symbol,size (imp),max current,unit price,units per build,units in stock,order total,Manufacturer ID,source url,MacroFab House Part,datasheet,,,
 80 pin header,PORT_IN1,,,$1.35,1,1,$1.35,DF40C-80DP-0.4V(51),http://www.digikey.com/product-detail/en/DF40C-80DP-0.4V(51)/H11632CT-ND/1969511,N,http://www.hirose.co.jp/cataloge_hp/ed_DF40_20140305.pdf,,Total Base Cost,$19.38
 80 pin receptacle (2.0mm),PORT_OUT1,,,$1.90,1,2,$1.90,DF40C(2.0)-80DS-0.4V(51),http://www.digikey.com/product-detail/en/DF40C(2.0)-80DS-0.4V(51)/H11773CT-ND/2178736,N,http://www.hirose.co.jp/cataloge_hp/ed_DF40_20140305.pdf,,,
 AND/OR gate,PORT_ANDOR1,,,$0.25,1,2,$0.25,SN74LVC1G0832DCKR,http://www.digikey.com/product-detail/en/SN74LVC1G0832DCKR/296-18754-1-ND/863884,,http://www.ti.com/lit/ds/symlink/sn74lvc1g0832.pdf,,,

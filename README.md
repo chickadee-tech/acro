@@ -2,13 +2,13 @@
 This mod connects an MPU-6500 to the base control board. It is not in active production.
 
 ## Documentation ##
-See the [wiki](./wiki) for documentation.
+See the [wiki](https://github.com/chickadee-tech/acro/wiki) for documentation.
 
 ## Polystack ##
-This **mod** board is part of the Polystack platform for modular microcontrol systems. More information on the platform can be found at [polystack.org]().
+This **mod** board is part of the Polystack platform for modular microcontrol systems. More information on the platform can be found at [polystack.org](https://polystack.org).
 
 ## Support ##
-If you need support with a board you own or have development questions please email support@chickadee.tech or check chickadee.tech/support for other ways to get support.
+If you need support with a board you own or have development questions please email support@chickadee.tech or check [chickadee.tech/support](https://chickadee.tech/support) for other ways to get support.
 
 ## Contributing ##
 Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
@@ -17,7 +17,7 @@ Please note that this project is released with a [Contributor Code of Conduct](C
 Components and footprints for PCB parts are not included in this repository. Instead, checkout the [chickadee-tech/kicad-libs](https://github.com/chickadee-tech/kicad-libs) repository in the same directory that this repository is checked out in. All part definitions should be relative so that they will load correctly.
 
 ### Pull requests ###
-For fixes please submit a pull request to the original repository. After the pull request is merged, check the [Chickadee Tech Active Contributor Discount (ACD)](chickadee.tech/active-contributor) to see if you are eligible for a discount code to use on your next purchase.
+For fixes please submit a pull request to the original repository. After the pull request is merged, check the [Chickadee Tech Active Contributor Discount (ACD)](https://chickadee.tech/active-contributor) to see if you are eligible for a discount code to use on your next purchase.
 
 ### Derivatives ###
 If developing your own version of the Acro board please remove all Chickadee Tech trademarks and follow the [CC-BY license](LICENSE). While not required, please consider open sourcing your modifications so others can learn from your improvements. If you do email support@chickadee.tech and we may choose to add your project to the ACD.

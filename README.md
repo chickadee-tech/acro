@@ -5,7 +5,7 @@ This mod connects an MPU-6500 to the base control board. It is not in active pro
 See the [wiki](https://github.com/chickadee-tech/acro/wiki) for documentation.
 
 ## Polystack ##
-This **mod** board is part of the Polystack platform for modular microcontrol systems. More information on the platform can be found at [polystack.org](https://polystack.org).
+This **mod** board is part of the Polystack platform for modular microcontrol systems. More information on the platform can be found at [polystack.org](http://polystack.org).
 
 ## Support ##
 If you need support with a board you own or have development questions please email support@chickadee.tech or check [chickadee.tech/support](https://chickadee.tech/support) for other ways to get support.
